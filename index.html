@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aim Training</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="screen">
+		<h1>Aim Training</h1>
+		<a href="" id="start-btn">Start playing</a>
+	</div>
+	<div class="screen">
+		<h1>Select duration</h1>
+		<ul class="time-list select-list" id="time-list">
+			<li>
+				<button class="select-btn time-btn" time-data="10">10 s</button>
+			</li>
+			<li>
+				<button class="select-btn time-btn" time-data="20">20 s</button>
+			</li>
+			<li>
+				<button class="select-btn time-btn" time-data="30">30 s</button>
+			</li>
+			<li>
+				<button class="select-btn time-btn" time-data="45">45 s</button>
+			</li>
+		</ul>
+	</div>
+	<div class="screen">
+		<h1>Select level of difficulty</h1>
+		<ul class="difficulty select-list" id="difficulty">
+			<li>
+				<button class="select-btn difficulty-btn">Easy</button>
+			</li>
+			<li>
+				<button class="select-btn difficulty-btn">Normal</button>
+			</li>
+			<li>
+				<button class="select-btn difficulty-btn">Hard</button>
+			</li>
+		</ul>
+	</div>
+	<div class="screen">
+		<h3>Remaining time <span id="time-table">00:00</span></h3>
+		<div class="board" id="board"></div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
